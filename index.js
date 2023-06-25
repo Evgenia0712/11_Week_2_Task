@@ -22,13 +22,12 @@ document.getElementById('input').onmouseover = colorMe;
 document.getElementById('input').onmouseout = colorMeBack;
 document.getElementById('button').onclick = addTask;
 
-
 function taskDone(evt) {
-  return evt.target.classList.toggle('done');
+  return evt.target.classList.toggle('done');  // Функция, которая проверяет на какой эл был клик и перечеркивает (или наоборот убирает зачеркивание) задачу приклике 
 }
 
-if (!!list) {
-  list.addEventListener('click', function (evt) {
+if (!!list) {                                      // Логически проверяем список пустой он или нет (true-не пустой, false- пустой (null))
+  list.addEventListener('click', function (evt) {  //
     taskDone(evt);
   });
 }
