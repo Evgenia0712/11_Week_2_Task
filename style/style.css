@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  max-width: 60vh;
+  height: 70vh;
+  margin: auto;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  row-gap: 2vh;
+  border: 2px solid black;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(121, 16, 93);
+}
+
+#input {
+  width: 50vh;
+  height: 3vh;
+}
+
+#button {
+  width: 30vh;
+  background-color: rgb(239, 144, 217);
+  border-radius: 30vh;
+  border: none;
+}
+
+.List__task {
+  color: rgb(121, 16, 93);
+}
+
+.done {
+  text-decoration: line-through;
+}
